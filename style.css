@@ -1,0 +1,38 @@
+html, body {
+    height: 98vh;
+}
+
+body {
+    background: #BE93C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(5, 5, 86);
+    background-color: rgb(121, 126, 218);
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+a:active {
+    color: white;
+    background-color: rgb(21, 28, 159);
+}

@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #70e1f5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+#game-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#words-container,
+#definitions-container {
+    padding: 1rem;
+    width: 45%;
+    min-height: 300px;
+    overflow-y: auto;
+}
+
+#words-container span {
+    color: rgb(43, 8, 157);
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    background-color: #65f5f560;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#definitions-container span {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    background-color: #e7b170df;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#score-container {
+    margin-top: 1rem;
+}
+
+.buttonContainer {
+    position: absolute;
+    bottom: 1rem;
+}
+
+#play-again-button {
+    position: relative;
+    bottom: 1rem;
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #073a69;
+    color: white;
+    z-index: 3;
+}
+
+#message-container {
+    font-weight: bold;
+    margin: 1rem 0; 
+}
+
+#review-container {
+    position: fixed; /* Make it fixed to stay in place */
+    bottom: 20%; /* Top position */
+    left: 10%; /* Left position */
+    width: 80%; /* Full width */
+    height: 60%; /* Full height */
+    background-color: rgba(20, 1, 1, 0.084); /* Transparent overlay */
+    display: flex; /* Allow centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+
+.word-pair {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.formula-word, .name-word {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(123, 216, 221);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
